@@ -1,0 +1,4 @@
+{
+  "HELLO": "Bonjour, {{name}} !",
+  "APP_RUNNING": "Félicitations ! Votre application fonctionne. 🎉"
+}
