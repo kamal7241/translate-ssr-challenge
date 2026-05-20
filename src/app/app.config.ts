@@ -13,16 +13,6 @@ export const appConfig: ApplicationConfig = {
     provideRouter(routes),
     provideClientHydration(withEventReplay()),
     provideHttpClient(),
-    // ...provideTranslateHttpLoader({
-    //   prefix: '/assets/i18n/',
-    //   suffix: '.json',
-    // }),
-    provideTranslateService({
-      loader: provideTranslateHttpLoader({
-        prefix: '/assets/i18n/',
-        suffix: '.json'
-      }),
-      fallbackLang: 'en',
-    }),
+    // i18n providers for @angular/localize can be added here if needed
   ],
 };

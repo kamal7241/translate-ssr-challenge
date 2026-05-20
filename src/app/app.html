@@ -1,3 +1,7 @@
+<div style="text-align:right; margin: 1rem;">
+  <button (click)="switchLang('en')">English</button>
+  <button (click)="switchLang('fr')">Français</button>
+</div>
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 <!-- * * * * * * * * * * * The content below * * * * * * * * * * * -->
 <!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
@@ -230,8 +234,8 @@
           <clipPath id="a"><path fill="#fff" d="M0 0h982v239H0z" /></clipPath>
         </defs>
       </svg>
-      <h1>{{ 'HELLO' | translate: { name: title() } }}</h1>
-      <p>{{ 'APP_RUNNING' | translate }}</p>
+      <h1 i18n="@@hello">Hello, {{ name }}</h1>
+      <p i18n="@@appRunning">App is running!</p>
     </div>
     <div class="divider" role="separator" aria-label="Divider"></div>
     <div class="right-side">
